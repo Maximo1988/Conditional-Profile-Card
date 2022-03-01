@@ -33,43 +33,35 @@ function render(variables = {}) {
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" /> 
-          <h1>${variables.name == null ? "Juan" : variables.name} 
-          ${variables.lastname == null ? "González" : variables.lastname}</h1>
-          <h2>${variables.role == null ? "Manager" : variables.role}</h2>
+          <h1>${variables.name == null ? "Máximo" : variables.name} 
+          ${variables.lastname == null ? "Bandoni" : variables.lastname}</h1>
+          <h2>${
+            variables.role == null ? "Full Stack Developer" : variables.role
+          }</h2>
           <h3>${
             variables.city == null ? "Ciudad de México" : variables.city
           }</h3>
-          <h4>${variables.country == null ? "México" : variables.country}</h4>
           
-          <ul class="${variables.socialMediaPosition}">
+          <ul class=${variables.socialMediaPosition}>
           
-          <i class="fab fa-twitter"></i></a></li>
           <li><a href="https://twitter.com/maxila88">${
-            variables.twitter == null
-              ? "https://twitter.com/4geeksacademy"
-              : variables.twitter
-          }
+            variables.twitter
+          }<i class="fab fa-twitter"></i></a></li>
          
-          <i class="fab fa-github"></i></a></li>
+          
           <li><a href="https://github.com/Maximo1988">${
-            variables.github == null
-              ? "https://github.com/4geeksacademy"
-              : variables.github
-          }
+            variables.github
+          }<i class="fab fa-github"></i></a></li>
          
-          <i class="fab fa-linkedin"></i></a></li>
+          
           <li><a href="https://www.linkedin.com/in/maximo-bandoni-01b9b7227/">${
-            variables.linkedin == null
-              ? "https://linkedin.com/4geeksacademy"
-              : variables.linkedin
-          }
+            variables.linkedin
+          }<i class="fab fa-linkedin"></i></a></li>
          
-          <i class="fab fa-instagram"></i></a></li>
+          
           <li><a href="https://www.instagram.com/maxila88/">${
-            variables.instagram == null
-              ? "https://instagram.com/4geeksacademy"
-              : variables.instagram
-          }
+            variables.instagram
+          }<i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
@@ -83,16 +75,17 @@ window.onload = function() {
     // if includeCover is true the algorithm should
     includeCover: true,
     // this is the url of the image that will used as background for the profile cover
-    background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da",
+    background:
+      "https://p4.wallpaperbetter.com/wallpaper/141/593/220/code-syntax-highlighting-php-programming-wallpaper-preview.jpg",
     // this is the url for the profile avatar
-    avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
+    avatarURL: "https://avatars.githubusercontent.com/u/97133106?v=4",
     // social media bar position (left or right)
-    socialMediaPosition: "position-left",
+    socialMediaPosition: "position-right",
     // social media usernames
-    twitter: null,
-    github: "alesanchezr",
-    linkedin: null,
-    instagram: null,
+    twitter: "twitter",
+    github: "github",
+    linkedin: "linkedin",
+    instagram: "instagram",
     name: null,
     lastname: null,
     role: null,
