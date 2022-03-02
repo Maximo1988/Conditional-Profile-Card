@@ -41,27 +41,25 @@ function render(variables = {}) {
           <h3>${
             variables.city == null ? "Ciudad de México" : variables.city
           }</h3>
-          
+          <h4>${variables.country == null ? "Mexico" : variables.country}</h4>
           <ul class=${variables.socialMediaPosition}>
-          
+
           <li><a href="https://twitter.com/maxila88">${
             variables.twitter
-          }<i class="fab fa-twitter"></i></a></li>
-         
-          
+          }<i class="fa-brands fa-twitter-square"></i></a></li>
+
           <li><a href="https://github.com/Maximo1988">${
             variables.github
-          }<i class="fab fa-github"></i></a></li>
-         
-          
+          }<i class="fa-brands fa-github"></i></a></li>
+
           <li><a href="https://www.linkedin.com/in/maximo-bandoni-01b9b7227/">${
             variables.linkedin
-          }<i class="fab fa-linkedin"></i></a></li>
-         
-          
+          }<i class="fa-brands fa-linkedin"></i></a></li>
+
           <li><a href="https://www.instagram.com/maxila88/">${
             variables.instagram
-          }<i class="fab fa-instagram"></i></a></li>
+          }<i class="fa-brands fa-instagram"></i></a></li>
+
           </ul>
         </div>
     `;
@@ -80,12 +78,12 @@ window.onload = function() {
     // this is the url for the profile avatar
     avatarURL: "https://avatars.githubusercontent.com/u/97133106?v=4",
     // social media bar position (left or right)
-    socialMediaPosition: "position-right",
+    socialMediaPosition: "position-left",
     // social media usernames
-    twitter: "twitter",
-    github: "github",
-    linkedin: "linkedin",
-    instagram: "instagram",
+    twitter: null,
+    github: null,
+    linkedin: null,
+    instagram: null,
     name: null,
     lastname: null,
     role: null,
